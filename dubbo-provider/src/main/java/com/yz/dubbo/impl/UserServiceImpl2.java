@@ -7,19 +7,18 @@ import com.yz.dubbo.model.User;
 import java.util.Arrays;
 import java.util.List;
 
-public class UserServiceImpl implements IUserService{
-
+public class UserServiceImpl2 implements IUserService{
     @Override
     public List<User> getUser() throws UserException {
 
 
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
-        System.out.println("被调用了3............");
+        System.out.println("被调用了2............");
 
         return Arrays.asList(new User[]{new User(1,"yz","china","hlj")
                 ,new User(2,"zwl","china","ah")

@@ -16,7 +16,7 @@
 
     <dubbo:registry address="zookeeper://127.0.0.1:2181"></dubbo:registry>
 
-    <dubbo:reference id="userService" interface="com.yz.dubbo.api.IUserService"></dubbo:reference>
+    <dubbo:reference id="userService" interface="com.yz.dubbo.api.IUserService" check="false" retries="10" version="1.0.0" ></dubbo:reference>
 
     <!--<bean id="orderService" class="com.yz.dubbo.service.impl.OrderServiceImpl"></bean>-->
 
